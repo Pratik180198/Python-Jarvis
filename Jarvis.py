@@ -10,7 +10,7 @@ import psutil
 import pyjokes
 
 
-email={"pratik":"pratikbambulkar1818@gmail.com","prabhakar":"prabhakarbambulkar@gmail.com","priya":"priyabambulkar83@gmail.com"}
+email={"Rahul":"demo@gmail.com"} #provide emails with their names to send the email when they said their names
 
 def speak(str):
     '''
@@ -61,7 +61,7 @@ def sendEmail(to,content):
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('demoversion54@gmail.com','Pratik@2018')
+    server.login('demoversion54@gmail.com','******') #provide your email and password 
     server.sendmail('demoversion54@gmail.com',to,content)
     server.close()
 
